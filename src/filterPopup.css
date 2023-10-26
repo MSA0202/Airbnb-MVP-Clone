@@ -1,0 +1,300 @@
+/* Filter Popup Container */
+.filter-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the popup appears on top of other content */
+}
+
+/* Popup */
+.filter-popup {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 700px; /* Fixed width */
+  height: 800px; /* Fixed height */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Header */
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: 40px;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+
+/* Content */
+.filter-content {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px; /* Adjust this to account for the fixed footer */
+  overflow-y: auto;
+  max-height: calc(100% - 160px); /* Adjust this to leave space for header and footer */
+  box-sizing: border-box;
+}
+
+/* Footer */
+.filter-footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 30px; /* Increase the top padding */
+  padding-bottom: 30px; /* Increase the bottom padding */
+}
+
+
+.filter-heading {
+  font-size: 24px; /* Adjust the font size as needed */
+  flex: 1; /* This makes the "Filter" div take up the available space */
+  text-align: center; /* Center the text horizontally */
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.filterclose-button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.filterclose-button:hover {
+  color: #ca2020; /* Close button color on hover */
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+
+.apply-button,
+.clear-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px; /* Adjust the padding to move buttons away from the edge */
+  margin-right: 20px; /* Add margin to separate the buttons */
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.clear-button {
+  background-color: #dc3545;
+}
+
+.apply-button:hover,
+.clear-button:hover {
+  opacity: 0.8;
+}
+
+.price-range {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee; /* Add a border to the bottom */
+}
+
+.pricerange-heading {
+  font-size: 25px; /* Adjust the font size as needed */
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.price-block {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+
+}
+
+.min-block,
+.max-block {
+  border: 1px solid grey;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 200px;
+  border-radius: 10px;
+
+}
+
+.min-label,
+.max-label {
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.min-price,
+.max-price {
+  font-size: 20px;
+  display: flex;
+  max-width: 95%;
+  border: none;
+  outline: none;
+}
+
+
+.property-type{
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee; 
+}
+
+.propertytype-heading {
+  font-size: 25px; /* Adjust the font size as needed */
+  font-family: 'Roboto', sans-serif;
+}
+
+.property-type-button {
+  background-color: #fff;
+  padding: 10px 20px; /* Adjust padding for larger buttons */
+  margin: 4px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  width: calc(25% - 12px); /* Make buttons evenly spaced */
+  text-align: center;
+  border: 1px solid ;
+}
+
+.property-type-button:hover {
+  background-color: #8c8e92;
+  color: #fff;
+
+}
+
+.property-type-button.selected {
+  background-color: #8c8e92;
+  color: #fff;
+  border: 1px solid #8c8e92;
+}
+
+.rooms{
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee; 
+}
+
+.rooms-heading {
+  font-size: 25px; /* Adjust the font size as needed */
+  font-family: 'Roboto', sans-serif;
+}
+
+.beds-heading {
+  font-size: 15px; /* Adjust the font size as needed */
+  font-family: 'Roboto', sans-serif;
+color: #313131;
+padding-bottom: 15px;
+}
+
+.beds-type-button {
+  background-color: #fff;
+  border: 1px solid;
+  padding: 10px 20px; /* Adjust padding for larger buttons */
+  margin: 4px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.beds-type-button:hover {
+  background-color: #8c8e92;
+  color: #fff;
+}
+
+.beds-type-button.selected {
+  background-color: #8c8e92;
+  color: #fff;
+  border: 1px solid #8c8e92;
+}
+
+.bathrooms-heading {
+  font-size: 15px; /* Adjust the font size as needed */
+  font-family: 'Roboto', sans-serif;
+color: #313131;
+padding-bottom: 15px;
+padding-top: 15px;
+}
+
+.bathrooms-type-button {
+  background-color: #fff;
+  border: 1px solid;
+  padding: 10px 20px; /* Adjust padding for larger buttons */
+  margin: 4px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.bathrooms-type-button:hover {
+  background-color: #8c8e92;
+  color: #fff;
+}
+
+.bathrooms-type-button.selected {
+  background-color: #8c8e92;
+  color: #fff;
+  border: 1px solid #8c8e92;
+}
+
+.amenities {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.amenities-heading {
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.amenities-options {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 10px; /* Adjust the gap between items */
+}
+
+.amenities-options label {
+  margin-right: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px; /* Increase the font size */
+  display: flex; /* Align text and checkbox horizontally */
+  align-items: center; /* Center text vertically */
+}
+
+.amenities-options input[type="checkbox"] {
+  margin-right: 5px;
+  width: 20px; /* Increase the width of the checkbox */
+  height: 20px; /* Increase the height of the checkbox */
+  appearance: none; /* Remove the default checkbox style */
+  border: 2px solid #000; /* Add a black border to the checkbox */
+  border-radius: 3px; /* Add a slight border radius for style */
+  vertical-align: middle; /* Align the checkbox vertically with the text */
+  
+}
+
+.amenities-options input[type="checkbox"]:checked {
+  background-color: #000; /* Change the background color to black when selected */
+}

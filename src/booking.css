@@ -1,0 +1,100 @@
+/* booking.css */
+
+.closeButton{
+    background-color: #ebe9e9 ; /* Set the background color to blue */
+    color: rgb(0, 0, 0) ; /* Set the text color to white */
+    border: 1px solid #ffffff; /* Set a blue border */
+    border-radius: 75px;
+    margin-top: 2%;
+}
+
+.closeButton:hover {
+    background-color: #f9f9f9;
+    color: #ff385c; /* Change the text color to blue on hover */
+    box-shadow: 0 0 8px rgba(1, 65, 86, 0.595);
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.5s; 
+  }
+
+.date-pickers-container {
+    white-space: nowrap; /* Prevent wrapping to new lines */
+  }
+  
+ .xyz{ /* the location input container within the booking.js file --> restyling */
+    background-color: #ffffff ; /* Set the background color to  */
+    color: #ff385c ; /* Set the text color to */
+    text-align: center;
+    border: 1px solid #ff385c; /* Set a color border */
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+    height: 58px; /* for some reason this  height is little different to start and end input container heights */
+ } 
+
+  .start,
+  .end {
+    display: inline-block; /* Display the date pickers inline */
+    margin-right: 5px; /* Add spacing between them */
+  }
+  
+
+
+input[type="text"][placeholder="Select start date"]{
+    background-color: #ffffff ; /* Set the background color to  */
+    color: #ff385c ; /* Set the text color to */
+    text-align: center;
+    border: 1px solid #ff385c; /* Set a color border */
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 3%;
+    height: 50px;
+  }
+  
+/* Style the date picker's calendar to be blue */
+input[type="text"][placeholder="Select end date"]{
+    background-color: #ffffff ; /* Set the background color to blue */
+    color: #ff385c ; /* Set the text color to white */
+    text-align: center;
+    border: 1px solid #ff385c; /* Set a blue border */
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
+    padding: 3%;
+    height: 50px;
+    margin-top: 5%; 
+  }
+
+
+.react-datepicker__header{
+    background-color: #ffffff ; /* Set the background color to blue */
+    color: white ; /* Set the text color to white */
+    border: 1px solid #ff385c; /* Set a blue border */
+  }
+
+.react-datepicker{
+    background-color: #ffffff ; /* Set the background color to blue */
+    color: white ; /* Set the text color to white */
+    border: 0.5px solid #ff385c; /* Set a blue border */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  /* Style the selected date */
+  .react-datepicker__day--selected {
+    background-color:#ff7676; /* Set the clicked date background color to blue */
+    color: rgb(255, 255, 255); /* Set the selected date text color to white */
+  }
+  
+  /* Style the hovered date */
+  .react-datepicker__day--keyboard-selected:hover {
+    background-color: #ff7676; /* Set the hover background color to a slightly darker blue */
+  }
+
+  .react-datepicker__day-name{
+    color:  #ff385c;
+  }
+
+  .react-datepicker__day{ /* Dates number color */
+    color:  #000000;
+  }
+
+
+  
+  

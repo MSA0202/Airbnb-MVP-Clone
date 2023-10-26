@@ -1,0 +1,23 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header, .footer {
+    font-family: 'Roboto', sans-serif;
+}
+
+.popup {
+    font-family: 'Roboto', sans-serif;
+}
+
+button, .btn {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul, ol, li, p {
+    font-family: 'Roboto', sans-serif;
+}

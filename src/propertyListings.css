@@ -1,0 +1,62 @@
+/* PropertyListing.css */
+
+.property-listing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .property-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .property-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif;
+
+  }
+  
+  .property-card p {
+    font-size: 1rem;
+    margin: 0 0 10px 10px;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+
+  }
+  
+  /* Style the price to stand out */
+  .property-card p:last-child {
+    font-weight: bold;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+
+  }
+
+  
+  /* Hover effect for the property card */
+  .property-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+  

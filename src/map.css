@@ -1,0 +1,63 @@
+
+.map-canvas {
+	height: 700px; 
+	width: 100%; 
+  }
+  
+
+.info-window {
+	width: 300px; 
+	height: 250px;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 5px;
+	text-align: left;
+  }
+
+
+.info-windowclose-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: red;
+  border: black;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+  border-radius: 50%;
+}
+
+  button.gm-ui-hover-effect {
+    visibility: hidden;
+}
+
+
+
+
+.marker-image {
+  width: 305px; /* Set your desired width */
+  height: 170px; /* Set your desired height */
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+
+.marker-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+.marker-type{
+  font-size: 15px;
+  margin: 5px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.marker-price {
+  font-size: 15px;
+  margin: 5px 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}

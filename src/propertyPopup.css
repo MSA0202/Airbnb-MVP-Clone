@@ -1,0 +1,130 @@
+.popup-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the popup appears on top of other content */
+}
+
+.property-popup {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 700px;
+  height: 700px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.propertyclose-holder {
+  text-align: right;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  border-bottom: 1px solid #eee;
+
+}
+
+.propertyclose-button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.propertyclose-button:hover {
+  background-color: #eee;
+  border-radius: 50%;
+  color: #ca2020;
+}
+
+.popup-content {
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  flex-grow: 1; /* Allow content to expand and push footer down */
+}
+
+.image-holder img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.property-title {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.property-location {
+  font-size: 16px;
+  color: #888;
+  margin-top: 0px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.property-price {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  max-width: 100%;
+  height: auto;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 10px;
+  border-bottom: #9e9c9c 0.5px solid;
+}
+
+.description-title,
+.amenities-title,
+.nearby-title {
+  font-size: 1.2rem; 
+  margin-bottom: 10px;
+  color: #333; 
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.property-description {
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.property-nearby {
+  list-style-type: square; /* Use square bullets for the nearby list */
+  padding-left: 20px; /* Add some left padding to the list */
+  font-family: 'Roboto', sans-serif;
+  border-bottom: #9e9c9c 0.5px solid;
+  padding-bottom: 20px;
+}
+
+.property-nearby li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px; /* Add spacing between nearby items */
+}
+
+.property-amenities {
+  list-style-type: circle; /* Use circle bullets for the amenities list */
+  padding-left: 20px; /* Add some left padding to the list */
+  font-family: 'Roboto', sans-serif;
+}
+
+.property-amenities li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px; /* Add spacing between amenities items */
+}
+
+

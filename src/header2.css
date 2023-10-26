@@ -1,0 +1,30 @@
+/* filter.css */
+
+.Header2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 60px;
+}
+
+.header2-button {
+  padding: 15px 25px;
+  border: 1px solid #ced3ce;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+.header2-button + .header2-button {
+  margin-left: 20px; /* Adjust the spacing as needed */
+}
+
+.header2-button:hover {
+  background-color: #f9f9f9;
+  color: #ff385c;
+  box-shadow: 0 0 8px #ff385c;
+}
